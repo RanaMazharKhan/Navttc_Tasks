@@ -15,3 +15,29 @@ for i in range(10):
         break
 else:
     print("Loop completed without finding 6")
+    
+c = 5
+
+while True:
+    print(c)
+    c -= 1
+    if c == 0:
+        print("Countdown finished!")
+        break  # Exit the loop
+    
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+val = 5
+found = False
+
+for r in matrix:
+    for n in r:
+        if n == val:
+            print(f"{val} found!")
+            found = True
+            break  # Exit the inner loop
+    if found:
+        break  # Exit the outer loop
